@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .registration-form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="registration-form">
+                    <h3 class="text-center mb-4">Placement Registration Form</h3>
+                    <form>
+                        
+                        <div class="row">
+                            <div class="col">
+                                <label for="First Name">First Name</label>
+                              <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+                            </div>
+                            <div class="col">
+                                <label for="Last Name">Last Name</label>
+                              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                          </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob" required>
+                        </div>
+
+                        
+                        <div class="form-group">
+                            <label for="course">Course</label>
+                            <select class="form-control" id="course" required>
+                                <option value="">Select your course</option>
+                                <option value="btech">B.Tech</option>
+                                <option value="mtech">M.Tech</option>
+                                <option value="mba">MBA</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="department">Department</label>
+                            <select class="form-control" id="department" required>
+                                <option value="">Select your department</option>
+                                <option value="cse">Computer Science</option>
+                                <option value="it">Information Technology</option>
+                                <option value="ece">Electronics and Communication</option>
+                                <option value="me">Mechanical</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cgpa">CGPA</label>
+                            <input type="number" class="form-control" id="cgpa" placeholder="Enter your CGPA" step="0.01" min="0" max="10" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Skills" class="form-label">Technical Skills</label>
+                            <textarea class="form-control" id="Skills" rows="3">Write your technical skills</textarea>
+                          </div>
+
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
